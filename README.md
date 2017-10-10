@@ -3,5 +3,7 @@
 
 ### My Haiku
 Make it responsive.
+
 A flexible foundation,
+
 Fluid media.
