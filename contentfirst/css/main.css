@@ -1,10 +1,14 @@
 html {
 	font: 100%/1.15 sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;	
 	}
 
 body {
 	font-family: Trebuchet MS, sans-serif;
+	background-color: #fc6;
 	}
+	
 	
 .visuallyhidden {
     border: 0;
@@ -22,18 +26,28 @@ body {
 
 header {
 	text-align: center;	
-	font-size: 1.3em;
+	font-size: 1em;
 	letter-spacing: .1em;
 	}
 	
-.trebuchet-ms {
-	text-shadow: 2px 4px 10px #360;
-	color: #639;
-}
+#banner h1 {
+	font-size: 5.4em;
+	font-variant: small-caps;
+	margin: 0 0 0 0;
+	letter-spacing: 15px;
+	font-weight: bold;
+	}
+	
+#trebuchet-ms {
+	text-shadow: 2px 4px 10px #300;
+	color: #069;
+	border: 4px;
+	}
+	
+
 
 #menu li {
 	text-align: center;
-	background-color: #fff;
 	padding: .2em;
 	list-style: none;
 	padding-left: 0;
@@ -41,7 +55,7 @@ header {
 	}
 
 nav a {
-	color: #639;
+	color: #069;
 	}
 
 figure {
@@ -51,6 +65,7 @@ figure {
 #features {
   list-style: none;
   padding-left: 1em;
+  text-align: center;
 }
 
 
@@ -72,7 +87,7 @@ figure {
   content: "";
   width: 1.5em;
   height: 1.5em;
-  background: #360;
+  background: #fff;
   border-radius: 50%;
   opacity: .5;
 }
@@ -85,7 +100,7 @@ figure {
   content: "";
   width: 1.5em;
   height: 1.5em;
-  background: #360;
+  background: #fff;
   border-radius: 50%;
   opacity: .5;
 }
@@ -98,7 +113,7 @@ figure {
   content: "";
   width: 1.5em;
   height: 1.5em;
-  background: #360;
+  background: #fff;
   border-radius: 50%;
   opacity: .5;
 }
@@ -111,7 +126,7 @@ figure {
   content: "";
   width: 1.5em;
   height: 1.5em;
-  background: #360;
+  background: #fff;
   border-radius: 50%;
   opacity: .5;
 }
@@ -124,7 +139,7 @@ figure {
   content: "";
   width: 1.5em;
   height: 1.5em;
-  background: #360;
+  background: #fff;
   border-radius: 50%;
   opacity: .5;
 }
@@ -137,21 +152,57 @@ figure {
   content: "";
   width: 1.5em;
   height: 1.5em;
-  background: #360;
+  background: #fff;
   border-radius: 50%;
   opacity: .5;
 }
 
 #styles-weights {
+	width: 100%;
 	text-align: center;
 	font-size: 1.1em;
-	letter-spacing: .1em
+	letter-spacing: .1em;
+	overflow: hidden;
+	}
+	
+#styles-weights p {
+	float: left;
+	width: 21%;
+	margin: 0 2%;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	}
+
+#styles-weights h2 {
+	font-size: 2.5em;
+	color: #c30;
 	}
 
 #try-me {
 	text-align: center;
 	font-size: 1.1em;
 	letter-spacing: .1em;
+	}
+	
+#try-me h2 {
+	font-size: 2.5em;
+	margin: 10px;
+	color: #c30;
+	}
+
+#try-me p:hover {
+	color: #069;
+	transition: all 0.3s ease;
+	}
+
+footer {
+	text-align: center;
+	font-size: 3.2em;
+	}
+
+footer a {
+	color: #069;
+	text-decoration: none;
 	}
 
 @media (min-width: 36em) {
@@ -176,7 +227,11 @@ figure {
   }
 }
 
+@media (min-width: 50em)
 
+	#trebuchet-ms {
+		width: 20%; 
+	}
 	
 /* 
 nav ul {
